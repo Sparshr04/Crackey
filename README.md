@@ -6,23 +6,15 @@ This repository contains the code and resources for training and inferencing a Y
 Table of Contents
 -----------------
 
-1.  [Project Description](https://www.google.com/search?q=#project-description)
-    
-2.  [Dataset](https://www.google.com/search?q=#dataset)
-    
-3.  [Prerequisites](https://www.google.com/search?q=#prerequisites)
-    
-4.  [Installation](https://www.google.com/search?q=#installation)
-    
-5.  [Training the Model](https://www.google.com/search?q=#training-the-model)
-    
-6.  [Inference (Making Predictions)](https://www.google.com/search?q=#inference-making-predictions)
-    
-7.  [Results](https://www.google.com/search?q=#results)
-    
-8.  [Contributing](https://www.google.com/search?q=#contributing)
-    
-9.  [License](https://www.google.com/search?q=#license)
+1.  [Project Description](#project-description)
+2.  [Dataset](#dataset)
+3.  [Prerequisites](#prerequisites)
+4.  [Installation](#installation)
+5.  [Training the Model](#training-the-model)
+6.  [Inference (Making Predictions)](#inference-making-predictions)
+7.  [Results](#results)
+8.  [Contributing](#contributing)
+9.  [License](#license)
     
 
 1\. Project Description
