@@ -6,7 +6,7 @@ This repository contains the code and resources for training and inferencing a Y
 Table of Contents
 -----------------
 
-1.  [Project Description](#Project-Description)
+1.  [Project Description](#[Project-Description](https://github.com/Sparshr04/Crackey/blob/Sparshr04-patch-1/README.md#2-dataset))
 2.  [Dataset](#dataset)
 3.  [Prerequisites](#prerequisites)
 4.  [Installation](#installation)
