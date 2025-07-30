@@ -6,7 +6,7 @@ This repository contains the code and resources for training and inferencing a Y
 Table of Contents
 -----------------
 
-1.  [Project Description](#project-description)
+1.  [Project Description](#1)
 2.  [Dataset](#dataset)
 3.  [Prerequisites](#prerequisites)
 4.  [Installation](#installation)
@@ -17,7 +17,7 @@ Table of Contents
 9.  [License](#license)
     
 
-1\. Project Description
+1\. Project Descriptio
 -----------------------
 
 This project aims to develop a robust crack detection system using the YOLO (You Only Look Once) object detection framework. The model is trained on a specialized dataset of images containing various types of cracks, sourced and preprocessed using Roboflow. The goal is to accurately identify and localize cracks in images, which can be crucial for structural health monitoring, quality control, and maintenance.
