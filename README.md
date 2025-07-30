@@ -7,14 +7,14 @@ Table of Contents
 -----------------
 
 1.  [Project Description](#1-project-description)
-2.  [Dataset](#dataset)
-3.  [Prerequisites](#prerequisites)
-4.  [Installation](#installation)
-5.  [Training the Model](#training-the-model)
-6.  [Inference (Making Predictions)](#inference-making-predictions)
-7.  [Results](#results)
-8.  [Contributing](#contributing)
-9.  [License](#license)
+2.  [Dataset](#2-dataset)
+3.  [Prerequisites](#3-prerequisites)
+4.  [Installation](#4-installation)
+5.  [Training the Model](#5-training-the-model)
+6.  [Inference (Making Predictions)](#6-inference-making-predictions)
+7.  [Results](#7-results)
+8.  [Contributing](#8-contributing)
+9.  [License](#9-license)
     
 
 1\. Project Description
