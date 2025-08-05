@@ -6,15 +6,12 @@ This repository contains the code and resources for training and inferencing a Y
 Table of Contents
 -----------------
 
-1.  [Project Description](#project-description)
-2.  [Dataset](#dataset)
-3.  [Prerequisites](#prerequisites)
-4.  [Installation](#installation)
-5.  [Training the Model](#training-the-model)
-6.  [Inference (Making Predictions)](#inference-making-predictions)     
-7.  [Results](#results)
-8.  [Contributing](#contributing)
-9.  [License](#license)
+1.  [Project Description](#1-project-description)
+2.  [Dataset](#2-dataset)
+3.  [Prerequisites](#3-prerequisites)
+4.  [Installation](#4-installation)
+5.  [Training the Model](#5-training-the-model)
+6.  [Inference (Making Predictions)](#6-inference-making-predictions)
     
 
 1\. Project Description
@@ -29,7 +26,9 @@ This project aims to develop a robust crack detection system using the YOLO (You
 
 The model is trained on a crack detection dataset.
 
-**Dataset Source:** Roboflow **Dataset Name:** \[Concrete cracks\]**Dataset Format:** YOLOv12
+**Dataset Source:** Roboflow
+**Dataset Name:** [Concrete cracks](https://universe.roboflow.com/susu-5j4cz/concrete-cracks-pvvid)
+**Dataset Format:** YOLOv8 (You can choose a different format if you wish)
 
 **To download your dataset from Roboflow:**
 
@@ -37,7 +36,7 @@ The model is trained on a crack detection dataset.
     
 2.  Select the desired version of your dataset.
     
-3.  Choose the export format (e.g., "YOLOv5 PyTorch" for Ultralytics YOLO).
+3.  Choose the export format (e.g., "YOLOv12 in our case).
     
 4.  Copy the provided download code snippet.
     
@@ -50,7 +49,7 @@ The model is trained on a crack detection dataset.
 
 Before you begin, ensure you have the following installed:
 
-*   Python 3.8+
+*   Python 3.9+
     
 *   pip (Python package installer)
     
@@ -108,18 +107,3 @@ Once your model is trained, you can use it to detect cracks in new images or vid
         
     *   source=...: Path to the image, folder of images, video, or webcam index.
         
-
-7\. Results
------------
-
-This section will be updated with performance metrics (e.g., mAP, precision, recall) and example detection images once the model has been trained and evaluated.
-
-8\. Contributing
-----------------
-
-Feel free to open issues or submit pull requests if you have suggestions, improvements, or bug fixes.
-
-9\. License
------------
-
-\[Specify your project's license here, e.g., MIT License\]
