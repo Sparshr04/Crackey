@@ -63,9 +63,22 @@ Before you begin, ensure you have the following installed:
 
 1.  git clone https://github.com/Sparshr04/Crackey.git
     
-2.  python -m venv venv# On Windows:.\\venv\\Scripts\\activate# On macOS/Linux:source venv/bin/activate
-    
-3.  pip install -r requirements.txt (you might also directly use pip install ultralytics)
+2.  #### On Windows
+    ```bash
+    python -m venv venv
+    \venv\Scripts\activate
+    ``` 
+    #### On macOS
+    ```bash
+    python -m venv venv
+    source venv/bin/activate
+    ``` 
+  
+3.  #### Requirements
+    ```bash
+    pip install -r requirements.txt 
+    #(you might also directly use pip install ultralytics)
+    ```
     
 
 5\. Training the Model
@@ -77,7 +90,7 @@ Training involves configuring your model, dataset, and training parameters.
     
 2.  **Choose a pre-trained model (optional but recommended):** You can start training from a pre-trained YOLOv12 model checkpoint to leverage transfer learning. Common options include yolov12n.pt (nano), yolov12s.pt (small), etc. Place this .pt file in your project root or a designated weights/ directory.
     
-3.  yolo train model=yolov12n.pt data=data.yaml epochs=100 imgsz=640 batch=16 **Explanation of arguments:Monitoring Training:** Training progress, metrics (mAP, loss), and visualizations will be saved in the runs/train/your\_run\_name/ directory. You can also monitor training with TensorBoard:tensorboard --logdir runs/trainThen open your web browser and navigate to the address provided by TensorBoard (usually http://localhost:6006).
+3.  yolo train model=yolov12n.pt data=data.yaml epochs=100 imgsz=640 batch=16 **Explanation of arguments:Monitoring Training:** Training progress, metrics (mAP, loss), and visualizations will be saved in the runs/train/your\_run\_name/ directory.
     
     *   yolo train: The command to start training (for Ultralytics YOLO).
         
@@ -92,18 +105,43 @@ Training involves configuring your model, dataset, and training parameters.
     *   batch=16: Batch size. Adjust based on your GPU memory.
         
 
-6\. Inference (Making Predictions)
+6\. Inference
 ----------------------------------
 
 Once your model is trained, you can use it to detect cracks in new images or videos.
 
 1.  **Locate your trained weights:** After training, your best model weights will be saved in runs/train/your\_run\_name/weights/best.pt.
-    
-2.  **For a single image:**yolo detect predict model=runs/train/yolov12\_crack\_detection/weights/best.pt source=path/to/your/image.jpg**For a directory of images:**yolo detect predict model=runs/train/yolov12\_crack\_detection/weights/best.pt source=path/to/your/image\_folder/**For a video file:**yolo detect predict model=runs/train/yolov12\_crack\_detection/weights/best.pt source=path/to/your/video.mp4**For webcam inference:**yolo detect predict model=runs/train/yolov12\_crack\_detection/weights/best.pt source=0 # '0' for default webcam**Explanation of arguments:Inference Results:** The images/videos with detected cracks will be saved in a new directory, typically runs/detect/predict/.
-    
-    *   yolo detect predict: The command to run inference (for Ultralytics YOLO).
-        
-    *   model=.../best.pt: Path to your trained model weights.
-        
-    *   source=...: Path to the image, folder of images, video, or webcam index.
+
+2. CLI Interface is easy to use. Below are the usge examples for cli.
+
+
+#### For a single image:
+```bash
+yolo detect predict model=runs/train/yolov12_crack_detection/weights/best.pt source=path/to/your/image.jpg
+```
+
+#### For a directory of images:
+```bash
+yolo detect predict model=runs/train/yolov12_crack_detection/weights/best.pt source=path/to/your/image_folder/
+```
+
+#### For a video file:
+```bash
+yolo detect predict model=runs/train/yolov12_crack_detection/weights/best.pt source=path/to/your/video.mp4
+```
+
+#### For webcam inference:
+```bash
+yolo detect predict model=runs/train/yolov12_crack_detection/weights/best.pt source=0
+```
+*Note: '0' represents the default webcam*
+
+### Explanation of Arguments
+
+- **model**: Path to the trained YOLOv12 crack detection model weights
+- **source**: Input source (image file, directory, video file, or webcam index)
+
+## Inference Results
+
+The images/videos with detected cracks will be saved in a new directory, typically `runs/detect/predict/`.
         
