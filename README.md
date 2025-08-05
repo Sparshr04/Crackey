@@ -28,7 +28,7 @@ The model is trained on a crack detection dataset.
 
 **Dataset Source:** Roboflow
 **Dataset Name:** [Concrete cracks](https://universe.roboflow.com/susu-5j4cz/concrete-cracks-pvvid)
-**Dataset Format:** YOLOv8 (You can choose a different format if you wish)
+**Dataset Format:** YOLOv12 (You can choose a different format if you wish)
 
 **To download your dataset from Roboflow:**
 
